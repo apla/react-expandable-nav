@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
 
 var ExpandableNavContainer = React.createClass({
   getInitialState() {
@@ -19,7 +19,7 @@ var ExpandableNavContainer = React.createClass({
     );
   },
   renderChild(child, i) {
-    return React.addons.cloneWithProps(child, {
+    return React.cloneElement(child, {
       key: child.key ? child.key : i,
       expanded: this.state.expanded,
       handleToggle: this.handleToggle,

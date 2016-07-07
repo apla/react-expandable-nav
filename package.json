@@ -25,7 +25,7 @@
     "karma-sinon": "^1.0.4",
     "mocha-phantomjs": "^3.5.2",
     "phantomjs": "^1.9.13",
-    "react": "^0.12.1",
+    "react": ">=0.13.0",
     "chai-jquery": "^2.0.0",
     "react-tools": "^0.12.2",
     "reactify": "^0.17.1",

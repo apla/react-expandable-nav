@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react/addons'),
-    ReactTestUtils = React.addons.TestUtils;
+var React = require('react'),
+    ReactTestUtils = require('react-addons-test-utils');
 
 var chai = require('chai');
 var expect = chai.expect;

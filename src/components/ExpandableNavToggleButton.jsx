@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
 
 var assign = require('object-assign'),
     joinClasses = require('../utils/joinClasses');
@@ -48,7 +48,7 @@ var ExpandableNavToggleButton = React.createClass({
       classes = this.props.smallClass;
     }
 
-    return React.addons.cloneWithProps(toggleButton, {
+    return React.cloneElement(toggleButton, {
       ref: toggleButton.ref,
       className: joinClasses(this.props.className, classes),
       style: style,
