@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
 
 var joinClasses = require('../utils/joinClasses'),
     assign = require('object-assign');
@@ -54,7 +54,7 @@ var ExpandableNavMenu = React.createClass({displayName: "ExpandableNavMenu",
     this.setState({active: i});
   },
   renderMenuItems:function(child, i) {
-    return React.addons.cloneWithProps(child, {
+    return React.cloneElement(child, {
       expanded: this.props.expanded,
       active: this.state.active === i,
       key: child.key ? child.key : i,
